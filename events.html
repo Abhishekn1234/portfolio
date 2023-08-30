@@ -1,0 +1,111 @@
+<html>
+    <body>
+        <button onclick="document.getElementById('p1').innerHTML=Date() ">Click Me </button>
+        <p id="p1">
+            
+        </p>
+        <select id="mySelect" onchange="myFunction()">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+          </select>
+          <p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://i0.wp.com/www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif?fit=450%2C250&ssl=1" alt="Smiley" width="32" height="32">
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFRgVFRUYGBgYGBgYGBgYGBgYGBgYGBgaGhoYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQrISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAAAgEDBAUGBwj/xAA6EAACAQIDBQUHBAECBwAAAAAAAQIDEQQFIRIxQVFxBmGBkaETIjKxwdHhQlJi8HIH8RQVgpKTotL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALxEAAgIBAwICCQQDAAAAAAAAAAECEQMEEiExQVGhBRMiMnGBkbHwFGHR4ULB8f/aAAwDAQACEQMRAD8A+NEkAWBJIEDAkkgCkBIAMkUILEpEpDJFUKxUgsNYawUTYliLD2Cw6CytogsaIaFQ7EIaGYEsoSwo7FaJYAKSSSMUAAQAAAIYAAAAAAAADEAUICUQMUgIJSJRKRSECQ6QJDJFJEtgkSkSolsYFqJDdFSiNsF0YDqmWoE7jPsEOma/Zdwrpj2MW4yOArRrcBJQMmilIzNClsoitEMtMraFZYK0SVYjRBLQpLRQEEgICAABAAAAhgAAADEEkFoRKJAEUBKHihUWRRRLJQ8YixRfCJrFGbZMIFsYEwgaqVI3jAybK4UTVDDG3B4Nyeh7HK+yknHanaEf5b/JnZHCkt0nSOXLqIw6nh44N8vQiWCfI+mSw+ApcHUt0t56GCvntCHwYekrc4pj9XFrhOv34/3fkc/6rK/dhf0R84q4VrgZJ07HvMV2ki9PY4b/AMX5ORiMVQqb6MIvnTdvS2vmcs4Q8fudGPLlfvwr4NM8pKJXKJ2sTly3wd1yatJeH2ucydJo45xaOuM7Mcoi2NEolU4mZqmVNCNFrQjQi0VgM0KSUBBICACAAQABIBQAAEooCQRBKLQh0iyJXAsRSJkWwiaacLlMEbsLE6ccbMZMup0O43YTCylJRSu27JLfdnrOzuBo1oSpzS2l70ZK21ayVu9Lf4sV4ZYScmmnNaQ03X/V1PUhhipbe6/P+nmS1icpY0vaXbx/rxOhg6NHBwTlszrWvbfGn17/AO9eZmOfzm/ib5X3LpFbjlYuvKbd3v8AV95QqbZnlzRxu318f48DOGFJ7pO34jV8VKW9tmOcmbVh2RLCM87JqtxvGUUcucWUypnXeEfIqlhHyOZ5LNlkRlwddwkr6riuPgdbPMmXs44iGsJb7c3x+a6nM9jZnscnjtYGtGW5bTV+eyn80bY5WnBnPqcrxbckfFJ/B8HzatSMs4nVxkLNnOmjBnpQZlaEkWTQjEaoqkQxmhRFkAACGSQABQAAAFABJBI0AEoAiNCHiWRK4liLREjRTNuElZmGmaqMtTohOmYzR6zKcxlTkpRdmt3Tkz0Tz6lUs6lGLkt0lvVu5r6nhMNM30Jne9VFq5LlfG/I83NpYSe5r59Pselrxw1TWO1CXRWfVIXB5TKW5ac+BdkmX7S25fD8+fgejppLduPD1mvWWWyPH7nm587x+xC/mc/D5FD9T8ka45LR4pvxNLrRirtpGavnFOPN+nzFi/Tpe1y/m/scDnnm/ZbBZHQ/a/Ms/wCU0NlxUEk1a/HwbOfU7S01+hvxsY6/at/phFdW39jqjkwL3V5f0WsGrn4/U5GMyacavs1G7e63FczfnVaGGwyw8WnOWtS3Du9F5d5iqdp6ycntK8la/wC1fx5HmsfjJTbbbd9W29W+bIUopPaexjwZsso+tqo88d3/AF+djDi5XbOfM01ZGSTIPZgimZUWzKhGqIYjHkJICkQQSSIoUAAQAAAAASQSNABKAgYixDoRDDsll9NmikzJFl8JFbjNo6VCZ2cqgpTjG9k3q+S4nnqczqZbidmVyJzexo5ssG4uup9TpqKilH4VHToc3HZvGDcYu9t7Wu7gjz8c8kotJ62t0vxOVUxLfE8yGn5uR5WPQSbe/odrE5nKXE59XFswuqJKZ1KKR3Q00Y9EXzrsplNsqdQI4iK4NmsUbrGl2NVLCSnpz3HFrStozqPOakV7iUe+20/XT0OPXm5Nybu222+9m8tlLaXCMrd9CmcimQ7EZBukUzKi6SEaHRaQkhJIsYrQUUVgM0QxAAAQAEEkgKhijCkggAkAGIZDIRDoBMeLLoMoRbBgKrNMGaqVQwwZogyWLab6dRmuhRc9xgpHVwFWUGpWvHivqYztLjqYzVdDrZbkG29W7f3cbMR2Mqr4JRmu97L8np6ncyTF0pJbMk3y3SXgd+DPDza7NCdL6NHC8s1I+cz7H4v9n/tD/wCjmYzIcRD4qcvD3vlc+vSqWR57NK61NMPpDNJ00vP+TdZH2PlVak07NW7mZZxPaY+MZaSSfVf2xwcRl8b+67ddV9z2cM3NdDrhyjhtCSib8RhZQ+JdHwfRmaVM6KZpRllEraNMolcojoqiiSFsXOJXJDAraIHaEaEAoAwEIAABAQSAAMAAAETFjxRWWxEx0MhoioZCKouiWwZTEtgSFHSwTTdj0uBoX/vgePpSsehynN9iymrrmt/lxOfNGTj7JzZsb7HpqeSwlrFuL33ju8jdSy7GR+CvdcpN/VMsyrMKM7bM435NpPyZ6GitEeHm1GSL2y81f3PPlOd7X5o89PC5i1rOD/v+BhxOBxq+KG1/jr6LX0PcxiaKdFGcdW4/4x+n8HTjTk+iPkWJck2pRcXxTumvBmGR9izPK6VSNpwT5Piuklqj5vn2SyoTsntRfwy49H3o9rQayGV7ap/nQ64rg5mGSfuyV4vmZc0yRwW3DWHHnG/Pu7zrYLCuTR3sNQcXsSWjS0eqaZ9JDDuhUh3R8wnSKJwPYdo8i9lJSivcnrHufGLfd8jzdWkckoNPk0ObOJVOJtqQM0okBRRJFbRdJFUkIkrZA7QgAQSACoQAAEjAAAAJSHixUMhFpDRHQkEWIllJFkS2CK4IuiiWy9o8DTAppxNVOBm2V6s0UpG6jj6kPhnOP+MmvkzHSomqnSXIhq+oPCn2NsM7xK3Vqv8A3y+52Mt7Y4qDW1JVI8VJK/hJa/M4EaK5FsYdxH6XHPhpfQh4I+B7efbGM90ZLrb6HOzPHqtBre9Guq/FzziibMFCUnuvwXHV6I1w6HFjacV0I20ep7NZTtKLtv8AvY6faDCRhVpRW+UH5qW71Z3uzmDVOnFcUkvHicPtXParKz+CKWnNu7+a8j2MWWU8yj2SEoXaXhZbWyJYjDzptatXg3wmlp9ujZ8izDBuLaas02uj5H6ByyalTjJfqWvXc153Pmnb7LFGvNpWU/fXWW/1uYRm5ykn1H3pHzKtAw1InZxdM5laImBimiho0zRRJEEMrYjHYrAQoAAgAAAkAACYgNDEkIkRaLIoeIqHiSaJFtNF8UUwRqpRuZyNYovoU7nQo0rleHpney3L3PcvwZSkkrZ04sbkzLQwzZupYJ8j12V9mnJJuOn7paLwR36PZ+C3y8kl8zz8mvhF1ZtJ4cfDfP7HzqOXvkNHLpvdFvwZ9NWTUv5eZbDK6S/TfqzJekvBGEsuF+J81w+SVZNLZd3wSu35aHq8q7P+z2ZSttLdHhHx4s9XRpRjpGKXRWOJn2eUcPe72p8IRet/5ftX9szt0usnkyK0cjqbOlVxsKNJye+1orm+C6czyMqjk3KWrbbfVsxV8wqVWpS8Et0e5fcsp1T6jDg9Wr7s1wOK5PadmJ3pNcpvyaTOD/qJTVoS7reT/J2OyMr05P8AkvkcP/UbEJOEb6qLfm/wcVVqZfP7HLGlNnynHx1Zx6yOtjp7zkVmEhGOZRMvmyiZmSylgDIATCwAAUSKBBJAwJiQTEQ0OhkKhkBoholsStFkBM1iX0zdhomKmb8HvMpG8VwdnLqDnJRW9tI+kZFhacEnJJpfCnxfN8zxPZyHvruT+R3sRjXHRcDg1EJZPZiejix3jfNX9j39PMab3yS6mWvn+Hi7JuX+K0839DwEsdNqxnc3zONeiqdmS0eFPlt+R9Afael+1+aMtftfFfDBeLv6I8PKUuZVKL5m+P0avAUsOnj0j5s7madrMRNOKlsLlD3fXecKjFt7cuqXfzYiglqM5nt6TSxxcnFlkmqSpG6FUvjWOUpmjCraklfTj0PYhN9Ec11yfUOyaUaEb75Ny8HovRI+cdus1VTET2XdRewv+nR+tzt4/P8A2FGUou0rbEF32+i18D5hi8U5N6nDKGzJKT7kKuqKcTUuznVpF1WoZKkjNjK5FEmWzZRNkkiMgZigSwAgAEQBAEUMB4ijCGhkPEVEgaIeJbAqiWQJNomiBuwcrS66GGBqpMzZ041Z7XJI2kpHex+BvacdzSvb59DyuQY5fDLon9Ge1y3G7Gj1XFfVGcK3Uz04xaxprk4n/DA8Oeqnl9CprB7L5fh/QonkU1us/G3zOxYu5Prcb4fHxPNSosolA9LPKprevVfcy1MBzS8zSOGXZEyhCfRnnpRKzuywEeLErU4QWiOqOGSVs5paJvlukcj2LWr8i2FZRTk3ZLVtmfG4qMNZS6Li+iPNZhmUp6bordH6vmxvJHH0PMyQt0uhpzbNZVZfxWkV3c33s5M5iTmUTmckpuTtk1Q05lLYNlcpEkiykVMaTIYhCsVktgMgAABgIAAQBIyFQyAaGRKIiMiTRDxLIlUSyJJtEvgzTTZkizRBks6YOjp4WpY9JgMykkk3fl/ueRpTN+HxFjKUT0sGbb8D2lPMu9o6GHzdpaS9bfU8XSxZoWLRePUTx9js24Zo9rLNJP8AW/P8mSpjY73JeZ5OWMRmr4w616Rl2gvqQ44odH5HpcVnFKH6rvuV/wAHncw7QTldRWyub1f2XqcqtXbMdSYPU5Z+9x8Dh1Ga1S6E16zk222297ZmlIJzKJSJs8uZMpFcpESkVyYGLRMmVykS2IBDJFZIrAhkMkggYhgFAYEAAEASSQhkA0TEZCoZEmiGQ6ZWPERpFl0WWxkZ4stiyTaLNMJF8JmSMh1Ilo6IzN8axYsQc9SG2xUbLKbZV3zKZ1TO5iOQJCeUtnMolIJSKpM0RzTkQ2VSY0mIzRGEmQytktkDMmRJikshgZtkMVksBkMUYUYEAoAAUBBIASAIZAADRKGIATLQwyACWaIsQ8QADZFkSyIAQzSIyJAALIZAAAMQSRIFmTKmIwAtGLK2QwAZmyGKwAZDIFAARBJAACAAABAf/9k=" alt="Smiley" width="32" height="32">
+
+
+<script>
+    function bigImg(x) {
+      x.style.height = "64px";
+      x.style.width = "64px";
+    }
+    
+    function normalImg(x) {
+      x.style.height = "32px";
+      x.style.width = "32px";
+    }
+    </script>
+    <script>
+        function bigImg(x) {
+          x.style.height = "90px";
+          x.style.width = "100px";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "32px";
+          x.style.width = "32px";
+        }
+        </script>
+        <input type="text" onkeydown="myFunction()">
+
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "You pressed a key inside the input field";
+        }
+        </script>
+    </body>
+    <body  onload="myFunction()">
+        
+    
+        <h1>HTML DOM Events</h1>
+        <h2>The onload Event</h2>
+        
+        <script>
+        function myFunction() {
+          alert("Page is loaded");
+        }
+        </script>
+        <form action="https://www.w3schools.com/" onsubmit="myFunction()">
+            Enter name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+          
+          <script>
+          function myFunction() {
+            alert("The form was submitted");
+          }
+          </script>
+          <p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+          <p id="demo"></p>
+          
+          <script>
+          function myFunction() {
+            document.getElementById("demo").innerHTML += "Hello World ";
+          }
+          </script>
+          Enter your name: <input type="text" onfocus="myFunction(this)">
+
+          <p>When the input field gets focus, a function changes the background-color.</p>
+          
+          <script>
+          function myFunction(x) {
+            x.style.background = "yellow";
+          }
+          </script>
+           Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+           <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+           
+           <script>
+           function myFunction() {
+             let x = document.getElementById("fname");
+             x.value = x.value.toUpperCase();
+           }
+           </script>          
+          
+    </body>
+    
+       
+</html>
